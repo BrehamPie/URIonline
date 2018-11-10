@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#define rep(n) for(int i=0;i<n;i++)
+#define ret(m,n) for(int j=m;j<n;j++)
+
+using namespace std;
+int main()
+{
+    int n,m,t;cin>>t;
+    while(t--)
+    {
+        cin>>n>>m;
+        int r=powl(3*n,2)+powl(m,2);
+        int b=powl(n,2)*2+powl(5*m,2);
+        int c=-100*n+powl(m,3);
+        if(r>=b && r>=c) cout<<"Rafael ganhou\n";
+        else if(b>=c && b>=r) cout<<"Beto ganhou\n";
+        else cout<<"Carlos ganhou\n";
+
+    }
+    return 0;
+}
