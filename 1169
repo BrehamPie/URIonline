@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    unsigned long long int n,t;cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        if(n==64)
+        {
+            cout<<"1537228672809129 kg\n";
+        }
+        else
+        {
+            n=powl(2,n);
+            cout<<n/12000<<" kg"<<endl;
+        }
+
+    }
+    return 0;
+}
