@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int m,n;
+    while(cin>>n>>m && n!=EOF)
+        cout<<max(m-n,n-m)<<endl;
+    return 0;
+}
