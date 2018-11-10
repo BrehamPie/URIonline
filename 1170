@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float n;int m,t;cin>>t;
+    while(t--)
+        {cin>>n;int cnt=0;
+        while(n>1){n/=2;cnt++;} cout<<cnt<<" dias\n";}
+}
