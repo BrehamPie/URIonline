@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+#define rep(n) for(int i=0;i<n;i++)
+#define ret(m,n) for(int j=m;j<n;j++)
+int arr[1001];
+using namespace std;
+int main()
+{
+    arr[1]=0,arr[2]=1;int j;
+    for(int i=3;i<=1000;i++)
+    {
+        int cnt=0;
+        for(j=1;j<=i;j++)
+        {
+            if(i%j==0) cnt++;
+        }
+        if(cnt%2==0) arr[i]=arr[i-1]+1;
+        else arr[i]=arr[i-1];
+    }
+    int c;cin>>c;
+    while(c--)
+    {
+        int i;cin>>i;
+        cout<<arr[i]<<endl;
+    }
+
+}
