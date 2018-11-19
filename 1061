@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+#define rep(i,n) for(i=mapi.begin();i!=n;i++)
+#define pb push_back
+#define mp make_pair
+using namespace std;
+
+int main()
+{
+    {
+        string x;char ch;int a,b,c,d,e,f,g,h;
+        cin>>x>>a>>b>>ch>>c>>ch>>d;
+        cin>>x>>e>>f>>ch>>g>>ch>>h;
+        int tt1=a*86400+b*3600+c*60+d;
+        int tt2=e*86400+f*3600+g*60+h;
+        int ss=tt2-tt1;;
+        a=ss/86400;ss%=86400;
+        b=ss/3600;ss%=3600;
+        c=ss/60;ss%=60;
+        d=ss;
+        printf("%d dia(s)\n%d hora(s)\n%d minuto(s)\n%d segundo(s)\n",a,b,c,d);
+    }
+}
